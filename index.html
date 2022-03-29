@@ -1,0 +1,66 @@
+<html>
+
+    <head>
+
+        <title>
+            cissel.eth
+        </title>
+
+        <style>
+
+            body { 
+                background: rgb(28,46,74); 
+                color: white; 
+                font-family: Arial; 
+            }
+            
+            .panel { 
+                width: 535; 
+                height: 390; 
+                border: solid lightblue 1px;
+            }
+
+            #quotes {
+                width:535;
+                height: 25;
+                border: solid lightblue 1px;
+            }
+
+            #left { width: 700px; }
+            #right { float: right; }
+
+        </style>
+
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+    </head>
+
+    <body>
+        
+        <h1> <center>cissel.eth</center></h1>
+
+        <div id="container">
+
+            <div id="right">
+
+                <h2>latest quote</h2>
+                <div id="quotes"></div>
+                <h2>trades</h2>
+                <div id="trades" class="panel"></div>
+    
+            </div>
+    
+            <div id="left">
+    
+                <h1>chart</h1>
+                <div id="chart"></div>
+    
+            </div>
+
+        </div>        
+
+    </body>
+
+    <script src="bot.js"> </script>
+
+</html>
